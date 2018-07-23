@@ -1,9 +1,14 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+  	<header>
+  			<h1>博客站测试项目</h1>
+  			
+  	</header>
+  	
+    <router-view></router-view>
+    
     <footer>
-    	<a href="#/page1">页面1</a>
+    	
     </footer>
     
   </div>
