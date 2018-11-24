@@ -2,7 +2,7 @@
   <div id="app">
   	<header>
   			<h1>博客站测试项目</h1>
-  			
+  			<nav-header></nav-header>
   	</header>
   	
     <router-view></router-view>
@@ -15,12 +15,24 @@
 </template>
 
 <script>
+
+import NavHeader from './components/NavHeader';
+	
 export default {
-  name: 'app'
+    name: 'app',
+    data(){
+  			return{
+  				
+  			}
+    },
+    components: {
+    		'nav-header':NavHeader
+    }
+    
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -29,4 +41,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>
